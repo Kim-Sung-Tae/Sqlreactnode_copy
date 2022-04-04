@@ -4,13 +4,13 @@
     <select id="interview">
         select 
             *
-        from bby_preinterview.conent_interview
+        from KST.preinterview_new
     </select>
     <insert id="interviewInsert">
         insert into 
-            bby_preinterview.conent_interview (
-                subject                
-                , content 
+            KST.preinterview_new (
+                Q              
+                , A 
             )
             values (
                 #{wr_subject}

@@ -1,50 +1,82 @@
 import React from 'react';
+import axios from 'axios';
 import $ from 'jquery';
 
 export default function interviewform(props) {
 
-    const submitClick = async (type, e) => {
+  
+    const submitClick = (type, e) => {
 
         const  fnValidate = (e) =>{
-            //여기서 유효성검사
-            // 필드에 값이 맞지않거나   
-              return true;
-          }
-          if(fnValidate()){
 
+                if(!$('#agreeTerm').is(':checked')){   
+                    alert("동의하시게나");
+                    $('label[for="agreeTerm"]').addClass('notice');                 
+                    return false;
+                }else{
+
+                    return true;
+                }
+                        
+              }
+          var time = new Date(); 
+         
+          if(fnValidate()){ // 동의했기때문에 데이터 모아서 이제 비동기로 노드한테 보내야겟다
            
-            var  jsonstr = decodeURIComponent($("[name='"+props.botable+"']").serialize()); //컴퓨터가 편하게 다루는 유니코드로 표현되는 값을 한글로 컨버트
-            alert("1."+jsonstr);
-            var json_form = JSON.stringify(jsonstr).replace(/\&/g, '\",\"') // 네임=값","네임=값
-            alert("2."+json_form);
-            json_form = "{\""+ json_form.replace(/=/gi, '\":\"') + "\"}" // { "네임":"값","네임":"값" }
-            alert("3.데이터를 한번에  json문법화됨 serialize() 안쓰면 일일이 담아야 함 "+json_form);
+            var  jsonstr = decodeURIComponent($("[name='"+props.botable+"']").serialize());     // name=value&name2=value2      
+            var  json_form = JSON.stringify(jsonstr).replace(/\&/g, '\",\"')  
+            json_form = "{\""+ json_form.replace(/=/gi, '\":\"') + "\"}" 
+          //{"   
+            try{
+                axios({
+                    url :`/prointerview?type=${props.botable}`,
+                    header:{
+                        "Content-Type" : 'application/json',
+                    },
+                    method :"POST",
+                    body : json_form
+                })
+                .then(
+                    //성공되었다라고 노출시켜준다.
+                )
 
-            e.preventDefault(); //react에서는 폼태그 전송 막기 위해서는 return false 가 아니다.
-        }        
-   
+            }
+            catch(err){
+                console.log(" 서버통신 문제가 있네 좀있다가 다시 시도해: "+err)
+
+            }
+            
+            
+
+          }
+           // e.preventDefault();     
+       
 
     }
   return (
     <div>
          <h2>{ props.titlenm }</h2>
-                 <form  action='' onSubmit={ e => { submitClick(props.botable, e); }}  method='post' name={props.botable}>
+                 <form  action=''  method='post' name={props.botable}>
                     <div className='formStyle'>
-                        <dl>
-                            <dt>인터뷰제목</dt>
+                        <dl>                            
+                            <dt><label htmlFor='wr_subject'>인터뷰제목</label></dt>
                             <dd>
-                                <input type='text' name='wr_subject' />
+                                <input type='text' name='wr_subject' id="wr_subject" required />
                             </dd>
                         </dl>
                         <dl>
-                            <dt>인터뷰내용</dt>
+                            <dt><label htmlFor="wr_content">인터뷰내용</label></dt>
                             <dd>
-                                <textarea rows={5} name="wr_content">
+                                <textarea rows={5} name="wr_content" id="wr_content"  required >
 
                                 </textarea>
                             </dd>
                         </dl>
-                        <button className='btn'> 인터뷰올리기 </button>
+                        <div className="agree">
+                            <input type="checkbox" id="agreeTerm" />
+                            <label htmlFor="agreeTerm"><span>개인정보정책동의</span></label>
+                        </div>
+                        <a href="#none" onClick={e => { submitClick(props.botable, e) }}  className='btn' > 인터뷰올리기 </a>
                     </div>
                  </form> 
 

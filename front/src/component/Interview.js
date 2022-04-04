@@ -4,7 +4,7 @@ import axios from 'axios';
 
 const Interview = (props) => {   
    
-    let [ interviewId, interviewIdUpdate ] = useState([]);  
+    let [ interviewId, interviewIdUpdate ] = useState([]);   
     const [typeData, insertDB ] = useState(0); 
    
     const interviewDataSetting = async () => {                      
@@ -45,8 +45,10 @@ const Interview = (props) => {
                  interviewId.map(( contant, i ) => {
                      return(
                          <li key={contant.no}>
-                             <h3>{i+1} {contant.subject}</h3><div>{contant.content}</div>
+                             <h3>{i+1} {contant.Q}</h3><div>{contant.A}</div>
                          </li>
+                         
+                         
                      )
                  })
              }

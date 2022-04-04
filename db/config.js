@@ -1,8 +1,8 @@
 module.exports = {
     connectionLimit: 66,  
-    host : 'myreactdb-1.cnplyybrklko.ap-northeast-2.rds.amazonaws.com',
-    user : 'admin',
-    password : 'Bang0820!!',
-    port : '3306',
-    database : 'introduce_react_node'
+    host : "myfirstdb-1.cqzp0xslvjuo.us-east-1.rds.amazonaws.com",
+    user : "admin",
+    password : "zyzuzizozp1!",
+    port : "3306",
+    database : "KST",
 }
