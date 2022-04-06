@@ -13,8 +13,8 @@
                 , A 
             )
             values (
-                #{wr_subject}
-                , #{wr_content}
+                "속성"
+                , "값"
             )
     </insert>
     <select id="meetingArrange">

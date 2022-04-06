@@ -31,6 +31,7 @@ router.post('/', (req, res ) =>{
 
                 if(req.body.crud == 'select'){
                     res.send(result); // react한테 res.data를 주라.
+  
                 }else{
                     res.send("succ"); // react한테 succ라는 문자를 주라.
                 }

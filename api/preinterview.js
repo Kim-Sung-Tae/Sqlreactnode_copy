@@ -13,10 +13,10 @@ router.post('/', (req, res, next) =>{
    if( type ){  
       switch(type){
          //사전인터뷰 글보기, 글쓰기, 글수정
-         case 'interviewlist' : req.body.crud = "select"; 
+         case 'interviewlist' : req.body.crud = "select";
                        req.body.mapper_id = "interview";
                        break;
-         case 'interviewwrite': req.body.crud = "insert"; 
+         case 'interviewwrite': req.body.crud = "insert";
                        req.body.mapper_id = "interviewInsert";
                        break;
          case 'interviewmodify': req.body.crud = "update"; 
