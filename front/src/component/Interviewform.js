@@ -75,7 +75,7 @@ export default function interviewform(props) {
   return (
     <div>
          <h2>{ props.titlenm }</h2>
-                 <form  action=''  method='post' name={props.botable}>
+                 <form  action='' method='post' name={props.botable}>
                     <div className='formStyle'>
                         <dl>                            
                             <dt><label htmlFor='wr_subject'>인터뷰제목</label></dt>

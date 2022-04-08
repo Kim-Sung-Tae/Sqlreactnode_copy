@@ -1,10 +1,10 @@
 import React from 'react'
 
-import '../css/kst.scss'
+
 
 function Header() {
   return (
-    <div>
+    <div >
         <ul class="nav justify-content-center" id="header">
             <li class="nav-item pills-tap">
                 <a class="nav-link active" aria-current="page" href="#">Active</a>
@@ -20,8 +20,9 @@ function Header() {
             </li>
         </ul>
 
-
     </div>
+
+    
   )
 }
 

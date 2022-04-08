@@ -1,0 +1,59 @@
+*{
+    margin : 0 auto ;
+}
+a{
+    display:block;
+}
+
+#logo{
+    width:200px;
+    
+    
+}
+
+#quick{
+    position:absolute;
+    margin-left :0px;
+
+ 
+    animation-duration: 2s;
+    animation-name: quick_margin;
+ 
+}
+
+@keyframes quick_margin{ 
+    
+    from{
+        margin-left:-100px;
+    }
+
+    to{
+        margin-left:0px;
+    }
+}
+
+@keyframes slidein {
+    from {
+      margin-left: 0%;
+     
+    }
+  
+    to {
+      margin-left: 100%;
+     
+    }
+  }
+
+
+#main_1{
+    width: 1920px;
+    height: 720px;
+    background-color: blueviolet;
+    background-image: url();
+}
+
+
+
+
+
+  
