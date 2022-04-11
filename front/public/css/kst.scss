@@ -1,25 +1,25 @@
 *{
     margin : 0 auto ;
 }
+li{
+    list-style: none;
+}
 a{
     display:block;
 }
 
 #logo{
-    width:200px;
-    
-    
+    width:200px;    
 }
 
 #quick{
     position:absolute;
-    margin-left :0px;
-
- 
-    animation-duration: 2s;
-    animation-name: quick_margin;
+    margin-right: 0px;
+    // animation-duration: 2s;
+    // animation-name: quick_margin;
  
 }
+
 
 @keyframes quick_margin{ 
     
@@ -45,13 +45,46 @@ a{
   }
 
 
-#main_1{
+#Main_1{
     width: 1920px;
     height: 720px;
     background-color: blueviolet;
-    background-image: url();
+ 
+    
 }
 
+#mainCard{
+    display: flex;
+    position: relative;
+    width:1920px;
+    height: 720px;
+    background-color: sandybrown;
+    div{
+        margin: 0 auto;
+    }
+}
+#footBox{
+    display:flex;
+    font-size: 1.5em;
+    border: 2px solid black;
+    align-items: center;
+}
+#footer_1{
+   
+        text-align: center;
+    
+}
+
+
+#Main_2{ 
+    align-items: center;
+}
+
+#m{
+    width: 250px;
+    height: 300px;
+    background-color: aqua;
+}
 
 
 

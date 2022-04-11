@@ -2,6 +2,10 @@
   margin: 0 auto;
 }
 
+li {
+  list-style: none;
+}
+
 a {
   display: block;
 }
@@ -12,11 +16,7 @@ a {
 
 #quick {
   position: absolute;
-  margin-left: 0px;
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-name: quick_margin;
-          animation-name: quick_margin;
+  margin-right: 0px;
 }
 
 @-webkit-keyframes quick_margin {
@@ -55,9 +55,49 @@ a {
   }
 }
 
-#main_1 {
+#Main_1 {
   width: 1920px;
   height: 720px;
   background-color: blueviolet;
-  background-image: url();
+}
+
+#mainCard {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: relative;
+  width: 1920px;
+  height: 720px;
+  background-color: sandybrown;
+}
+
+#mainCard div {
+  margin: 0 auto;
+}
+
+#footBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 1.5em;
+  border: 2px solid black;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#footer_1 {
+  text-align: center;
+}
+
+#Main_2 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#m {
+  width: 250px;
+  height: 300px;
+  background-color: aqua;
 }

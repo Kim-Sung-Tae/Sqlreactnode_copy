@@ -76,15 +76,27 @@ export default function interviewform(props) {
     <div>
          <h2>{ props.titlenm }</h2>
                  <form  action='' method='post' name={props.botable}>
-                    <div className='formStyle'>
+                    <div className='formStyle'>Contact Me
                         <dl>                            
-                            <dt><label htmlFor='wr_subject'>인터뷰제목</label></dt>
+                            <dt><label htmlFor='wr_subject'>Name</label></dt>
+                            <dd>
+                                <input type='text' name='wr_subject' id="wr_subject" required />
+                            </dd>
+                        </dl>
+                        <dl>                            
+                            <dt><label htmlFor='wr_subject'>연락처</label></dt>
+                            <dd>
+                                <input type='text' name='wr_subject' id="wr_subject" required />
+                            </dd>
+                        </dl>
+                        <dl>                            
+                            <dt><label htmlFor='wr_subject'>지역</label></dt>
                             <dd>
                                 <input type='text' name='wr_subject' id="wr_subject" required />
                             </dd>
                         </dl>
                         <dl>
-                            <dt><label htmlFor="wr_content">인터뷰내용</label></dt>
+                            <dt><label htmlFor="wr_content">기타 내용</label></dt>
                             <dd>
                                 <textarea rows={5} name="wr_content" id="wr_content"  required >
 
