@@ -29,17 +29,13 @@ function App() {
 
       <Quick></Quick>
       <Main_1></Main_1>
-      {/* <Modal_1></Modal_1> */}
-      <Modal_2></Modal_2>
-      <div id="mainCard" className='container'>
-        <div className='row'>
-          <Main_2 altsrc="이미지를 넣어주세요." title="WHO"></Main_2>
-          <Main_2 altsrc="이미지를 넣어주세요." title="WHY"></Main_2>
-          <Main_2 altsrc="이미지를 넣어주세요." title="HOW"></Main_2>
-          <Main_2 altsrc="이미지를 넣어주세요." title="WHAT"></Main_2>
-          <Main_2 altsrc="이미지를 넣어주세요." title="WHERE"></Main_2> 
-        </div>
-      </div>
+      <Modal_1></Modal_1>
+     
+    {/* <Main_2></Main_2> */}
+        <Modal_2></Modal_2>
+  
+
+       
 
        {/* <Header></Header> */}
       {/* 네비게이션 */}
