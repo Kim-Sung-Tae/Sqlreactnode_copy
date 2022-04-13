@@ -2,6 +2,8 @@ import Conent_interview from './component/Interview';
 import Content_interview_form from './component/Interviewform';
 import './App.css';
 import  Header from './component/Header';
+
+import TopNav from './component/TopNav';
 import Quick from './component/Quick';
 
 import Main_1 from './component/Main_1';
@@ -10,6 +12,7 @@ import Main_2 from './component/Main_2';
 import Modal_1 from './component/Modal_1';
 import Modal_2 from './component/Modal_2';
 
+import Portpolio from './component/Portpolio';
 import Footer from './component/Footer';
 
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -26,11 +29,12 @@ function App() {
           <img id="logo" src='/img/logo1.svg' alt="로고"></img>
       </div>
       
-
+      {/* <TopNav></TopNav> */}
+     
       <Quick></Quick>
       <Main_1></Main_1>
       <Modal_1></Modal_1>
-     
+   
     {/* <Main_2></Main_2> */}
         <Modal_2></Modal_2>
   

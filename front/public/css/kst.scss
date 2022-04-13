@@ -116,17 +116,27 @@ a{
 #quick{
     .dropup{
         img{
-            width:100px;
+            width:120px;
+            transition: 2s;
+            background:url('img/m1.jpg');
+        }
+        img:active{
+            transition: 1s;
+            width:120px;
+            transform:translate(0px,-50%)!important;
         }
 
-        // .dropdown-toggle{
-        //     background:url('/img/Qbefore.svg');   
-        //     background-repeat: no-repeat; 
-        // }
-        // .dropdown-toggle .show{
-        //     background:url('/img/Qbefore.svg'); 
-        //     background-repeat: no-repeat;
-        // }
+        .dropdown-toggle{
+            background:url('/img/Qbefore.svg');   
+            background-repeat: no-repeat; 
+        }
+        .dropdown-toggle.show{
+            background:url('/img/Qafter.svg'); 
+            background-repeat: no-repeat;
+        }
+        button{
+            box-shadow: none;
+        }
          button::after{
              display:none;
          }
@@ -136,11 +146,18 @@ a{
         .quickbox{
             min-width:80px;  
             transform:translate(0px,-50%)!important;
-               
+            border:none;  
+            transition: 2s;  
+                
                 li{
                     padding:10%;
                 }
         }
+        .quickbox .show{
+
+            transition: 1s;
+            min-width: 80px;
+        } 
     }
 }
 
@@ -177,5 +194,8 @@ a{
 
 
 
-
+.swiper {
+    width: 600px;
+    height: 300px;
+  }
   

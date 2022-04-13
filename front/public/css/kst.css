@@ -142,7 +142,33 @@ a {
 }
 
 #quick .dropup img {
-  width: 100px;
+  width: 120px;
+  -webkit-transition: 2s;
+  transition: 2s;
+  background: url("img/m1.jpg");
+}
+
+#quick .dropup img:active {
+  -webkit-transition: 1s;
+  transition: 1s;
+  width: 120px;
+  -webkit-transform: translate(0px, -50%) !important;
+          transform: translate(0px, -50%) !important;
+}
+
+#quick .dropup .dropdown-toggle {
+  background: url("/img/Qbefore.svg");
+  background-repeat: no-repeat;
+}
+
+#quick .dropup .dropdown-toggle.show {
+  background: url("/img/Qafter.svg");
+  background-repeat: no-repeat;
+}
+
+#quick .dropup button {
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 #quick .dropup button::after {
@@ -157,10 +183,19 @@ a {
   min-width: 80px;
   -webkit-transform: translate(0px, -50%) !important;
           transform: translate(0px, -50%) !important;
+  border: none;
+  -webkit-transition: 2s;
+  transition: 2s;
 }
 
 #quick .dropup .quickbox li {
   padding: 10%;
+}
+
+#quick .dropup .quickbox .show {
+  -webkit-transition: 1s;
+  transition: 1s;
+  min-width: 80px;
 }
 
 .kakao, .Tistory, .github {
@@ -189,4 +224,9 @@ a {
   background-position: center;
   background-size: 100%;
   background-repeat: no-repeat;
+}
+
+.swiper {
+  width: 600px;
+  height: 300px;
 }
