@@ -115,16 +115,38 @@ a{
 
 #quick{
     .dropup{
+        img{
+            width:100px;
+        }
+
+        // .dropdown-toggle{
+        //     background:url('/img/Qbefore.svg');   
+        //     background-repeat: no-repeat; 
+        // }
+        // .dropdown-toggle .show{
+        //     background:url('/img/Qbefore.svg'); 
+        //     background-repeat: no-repeat;
+        // }
+         button::after{
+             display:none;
+         }
         .dropdown-item{
-            height: 30px;
+            width:100%;
         }
         .quickbox{
-            min-width:50px; 
+            min-width:80px;  
+            transform:translate(0px,-50%)!important;
                
-           
+                li{
+                    padding:10%;
+                }
         }
     }
 }
+
+
+
+
 
 
 .kakao,.Tistory,.github{

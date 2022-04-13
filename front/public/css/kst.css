@@ -141,12 +141,26 @@ a {
   color: black;
 }
 
+#quick .dropup img {
+  width: 100px;
+}
+
+#quick .dropup button::after {
+  display: none;
+}
+
 #quick .dropup .dropdown-item {
-  height: 30px;
+  width: 100%;
 }
 
 #quick .dropup .quickbox {
-  min-width: 50px;
+  min-width: 80px;
+  -webkit-transform: translate(0px, -50%) !important;
+          transform: translate(0px, -50%) !important;
+}
+
+#quick .dropup .quickbox li {
+  padding: 10%;
 }
 
 .kakao, .Tistory, .github {
