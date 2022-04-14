@@ -62,8 +62,7 @@ a{
     width: 1320px;
     height: 720px;
     background-color: blueviolet;
- 
-    
+
 }
 
 #mainCard{
@@ -115,24 +114,22 @@ a{
 
 #quick{
     .dropup{
-        img{
-            width:120px;
-            transition: 2s;
-            background:url('img/m1.jpg');
-        }
-        img:active{
-            transition: 1s;
-            width:120px;
-            transform:translate(0px,-50%)!important;
-        }
+        
+        
 
         .dropdown-toggle{
+            width: 75px;
+            height: 100px;
             background:url('/img/Qbefore.svg');   
             background-repeat: no-repeat; 
+            transition:0.5s;
+            background-color: none;
         }
         .dropdown-toggle.show{
             background:url('/img/Qafter.svg'); 
             background-repeat: no-repeat;
+            transition:0.5s;
+            background-color: none !important;
         }
         button{
             box-shadow: none;
@@ -143,14 +140,15 @@ a{
         .dropdown-item{
             width:100%;
         }
-        .quickbox{
-            min-width:80px;  
-            transform:translate(0px,-50%)!important;
+        ul.dropdown-menu.quickbox{
+            min-width:50px;  
+            background-color: transparent;
             border:none;  
-            transition: 2s;  
-                
+            transition: 1s;  
+            z-index: 0;
                 li{
-                    padding:10%;
+                    padding:0;
+                    height: 70px;
                 }
         }
         .quickbox .show{
@@ -160,11 +158,6 @@ a{
         } 
     }
 }
-
-
-
-
-
 
 .kakao,.Tistory,.github{
     display: inline-block;
@@ -192,10 +185,37 @@ a{
     background-repeat: no-repeat;
 }
 
+#swiperwrap{
+    width:1200px;
+    height:500px;
+    
+    display: flex;
+    align-items: center;
+        #swiperbox{
+            width:300px;
+           
+           
+            .swiper-wrapper{
+                flex-direction: column;
+                transform:none;
+              
+                all:unset;
+            }
+        }
+        #swipertext{
+            width:350px;
+            height: 250px;
+            color:lightseagreen;
+            border:3px dashed gray;   
+            .swipertextbox{
+                margin:0 auto;
+                align-items: center;
+
+            }
+        }
+        
+}
 
 
-.swiper {
-    width: 600px;
-    height: 300px;
-  }
+
   

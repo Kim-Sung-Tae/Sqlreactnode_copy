@@ -141,29 +141,22 @@ a {
   color: black;
 }
 
-#quick .dropup img {
-  width: 120px;
-  -webkit-transition: 2s;
-  transition: 2s;
-  background: url("img/m1.jpg");
-}
-
-#quick .dropup img:active {
-  -webkit-transition: 1s;
-  transition: 1s;
-  width: 120px;
-  -webkit-transform: translate(0px, -50%) !important;
-          transform: translate(0px, -50%) !important;
-}
-
 #quick .dropup .dropdown-toggle {
+  width: 75px;
+  height: 100px;
   background: url("/img/Qbefore.svg");
   background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: none;
 }
 
 #quick .dropup .dropdown-toggle.show {
   background: url("/img/Qafter.svg");
   background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  background-color: none !important;
 }
 
 #quick .dropup button {
@@ -179,17 +172,18 @@ a {
   width: 100%;
 }
 
-#quick .dropup .quickbox {
-  min-width: 80px;
-  -webkit-transform: translate(0px, -50%) !important;
-          transform: translate(0px, -50%) !important;
+#quick .dropup ul.dropdown-menu.quickbox {
+  min-width: 50px;
+  background-color: transparent;
   border: none;
-  -webkit-transition: 2s;
-  transition: 2s;
+  -webkit-transition: 1s;
+  transition: 1s;
+  z-index: 0;
 }
 
-#quick .dropup .quickbox li {
-  padding: 10%;
+#quick .dropup ul.dropdown-menu.quickbox li {
+  padding: 0;
+  height: 70px;
 }
 
 #quick .dropup .quickbox .show {
@@ -226,7 +220,41 @@ a {
   background-repeat: no-repeat;
 }
 
-.swiper {
-  width: 600px;
-  height: 300px;
+#swiperwrap {
+  width: 1200px;
+  height: 500px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#swiperwrap #swiperbox {
+  width: 300px;
+}
+
+#swiperwrap #swiperbox .swiper-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-transform: none;
+          transform: none;
+  all: unset;
+}
+
+#swiperwrap #swipertext {
+  width: 350px;
+  height: 250px;
+  color: lightseagreen;
+  border: 3px dashed gray;
+}
+
+#swiperwrap #swipertext .swipertextbox {
+  margin: 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }

@@ -29,11 +29,13 @@ function App() {
           <img id="logo" src='/img/logo1.svg' alt="로고"></img>
       </div>
       
+      <Portpolio>aa</Portpolio>
       {/* <TopNav></TopNav> */}
      
       <Quick></Quick>
       <Main_1></Main_1>
       <Modal_1></Modal_1>
+
    
     {/* <Main_2></Main_2> */}
         <Modal_2></Modal_2>

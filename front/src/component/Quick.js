@@ -26,8 +26,8 @@ export default function Navbar() {
   return (
 <div id ="quick">
   <div class="dropup">
-    <button onClick={ e=>{ toggleImg(img1, true) }} class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-      <img id="img" src="" alt="quick메뉴"/>
+    <button  class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+      <img id="quickimg" src="" alt=""/>
     </button>
     <ul class="dropdown-menu quickbox" aria-labelledby="dropdownMenuButton1">
       <li><a class="kakao dropdown-item" href="#"></a></li>
