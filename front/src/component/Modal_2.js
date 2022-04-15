@@ -1,4 +1,5 @@
 import React from 'react'
+import Portpolio from './Portpolio'
 
 
 export default function Modal_2() {
@@ -29,7 +30,7 @@ export default function Modal_2() {
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
                     <div class="modal-body">
-                      22
+                     <Portpolio></Portpolio>
                     </div>
                     <div class="modal-footer">
                         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>

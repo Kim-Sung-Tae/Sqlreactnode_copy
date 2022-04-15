@@ -104,6 +104,10 @@ a {
           align-items: center;
 }
 
+#mainCard .modal-dialog {
+  max-width: none;
+}
+
 .cardBox {
   width: 400px;
   height: 250px;
@@ -142,17 +146,19 @@ a {
 }
 
 #quick .dropup .dropdown-toggle {
+  position: relative;
   width: 75px;
   height: 100px;
-  background: url("/img/Qbefore.svg");
+  background: url("/img/Qbefore.svg") white;
   background-repeat: no-repeat;
   -webkit-transition: 0.5s;
   transition: 0.5s;
   background-color: none;
+  z-index: 10000;
 }
 
 #quick .dropup .dropdown-toggle.show {
-  background: url("/img/Qafter.svg");
+  background: url("/img/Qafter.svg") white;
   background-repeat: no-repeat;
   -webkit-transition: 0.5s;
   transition: 0.5s;
@@ -221,8 +227,7 @@ a {
 }
 
 #swiperwrap {
-  width: 1200px;
-  height: 500px;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -232,7 +237,7 @@ a {
 }
 
 #swiperwrap #swiperbox {
-  width: 300px;
+  width: 100%;
 }
 
 #swiperwrap #swiperbox .swiper-wrapper {
@@ -245,16 +250,47 @@ a {
   all: unset;
 }
 
+#swiperwrap #swiperbox .swiper-wrapper .swiper-slide {
+  width: 100% !important;
+  text-align: center;
+  margin: 0 auto;
+  padding: 10%;
+}
+
 #swiperwrap #swipertext {
-  width: 350px;
-  height: 250px;
+  width: 80%;
+  height: 100%;
   color: lightseagreen;
   border: 3px dashed gray;
 }
 
 #swiperwrap #swipertext .swipertextbox {
+  width: 100%;
   margin: 0 auto;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+#swiperwrap #swipertext .swiper-slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#swiperwrap #swipertext .swiper-slide ul {
+  padding: 10%;
+}
+
+#swiperwrap #swipertext .swiper-slide ul li {
+  border: 2px solid;
+  padding: 10%;
+}
+
+#exampleModal1 .modal-content {
+  width: 1500px;
+}
+
+#exampleModal1 .modal-body {
+  width: 100%;
 }

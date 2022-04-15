@@ -75,7 +75,14 @@ a{
         align-items: center;
      
     }
-    
+    .modal-dialog{
+        max-width:none;
+
+        .modal-content{
+            
+        }
+    }
+   
 }
 
 .cardBox{
@@ -118,15 +125,17 @@ a{
         
 
         .dropdown-toggle{
+            position:relative;
             width: 75px;
             height: 100px;
-            background:url('/img/Qbefore.svg');   
+            background:url('/img/Qbefore.svg') white;   
             background-repeat: no-repeat; 
             transition:0.5s;
             background-color: none;
+            z-index: 10000;
         }
         .dropdown-toggle.show{
-            background:url('/img/Qafter.svg'); 
+            background:url('/img/Qafter.svg') white; 
             background-repeat: no-repeat;
             transition:0.5s;
             background-color: none !important;
@@ -186,35 +195,63 @@ a{
 }
 
 #swiperwrap{
-    width:1200px;
-    height:500px;
-    
+    width:100%; 
     display: flex;
     align-items: center;
         #swiperbox{
-            width:300px;
-           
-           
-            .swiper-wrapper{
+                width:100%;  
+               
+        .swiper-wrapper{            
+                
                 flex-direction: column;
-                transform:none;
-              
+                transform:none;                
                 all:unset;
+                    .swiper-slide{  
+                        width:100% !important; 
+                        text-align: center;
+                        margin:0 auto;
+                        padding:10%
+                    }
             }
+
         }
         #swipertext{
-            width:350px;
-            height: 250px;
+           
+            width:80%;
+            height: 100%;
             color:lightseagreen;
             border:3px dashed gray;   
             .swipertextbox{
+                width:100%;
                 margin:0 auto;
                 align-items: center;
 
             }
+        .swiper-slide{
+            display:flex;
+            ul{
+                padding:10%;
+                li{
+                    border:2px solid;
+                    padding:10%;
+                }
+            }
+        }
         }
         
 }
+
+
+#exampleModal1{
+    .modal-content{
+        width:1500px;
+
+    }
+    .modal-body{
+        width:100%;
+    }
+}
+
 
 
 

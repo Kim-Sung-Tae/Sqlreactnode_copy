@@ -34,13 +34,16 @@ export default function Portpolio() {
             className="mySwiper"
           >
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              Portpolio#1
+              {/* <img src="https://swiperjs.com/demos/images/nature-1.jpg" /> */}
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+            Portpolio#2
+              {/* <img src="https://swiperjs.com/demos/images/nature-2.jpg" /> */}
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+            Portpolio#3
+              {/* <img src="https://swiperjs.com/demos/images/nature-3.jpg" /> */}
             </SwiperSlide>
 
           </Swiper>
@@ -52,28 +55,50 @@ export default function Portpolio() {
               "--swiper-navigation-color": "#fff",
               "--swiper-pagination-color": "#fff",
             }}
-            spaceBetween={10}
+            spaceBetween={0}
             navigation={true}
             thumbs={{ swiper: thumbsSwiper }}
             modules={[FreeMode, Navigation, Thumbs]}
             className="mySwiper2"
           >
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+              <div >
+                <img src="img/project1.jpg" />
+              </div>
+              <div>
+                <ul>
+                  <li>
+                    Project#1 에 사용 한 언어&기술은 
+                    HTML , CSS , JS , REACT , PS , PIGMA  이며
+                </li>
+                  <li>
+                    Project#1을 개발 목적은 사이트 홍보이며..
+                    그로 인해서 많은 홍보효과를 기대할수 있습니다.~
+                </li>
+                  <li>
+                  제작 특징으로는 내용들을 그누보드를 통해서
+                  cms 페이지에서 누구나 간편하게 관리및 수정이 용이하고...
+                  </li>
+                  <li>
+                    프로젝트 마무리후 느낀 아쉬운점과 보완할점은 
+                    컨텐츠 내용의 모자름과,디자인등이 어울리지 않았던..
+                    mysql 의 연동이 되지 않았고.. 일관성이 없던..
+                  </li>
+                  <li></li>
+                </ul>
+              </div>
+              
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+              <img src="img/m1.jpg" />
             </SwiperSlide>
             <SwiperSlide>
-              <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+              <img src="img/m2.jpg" />
             </SwiperSlide>
 
           </Swiper>
-          <ul class ="swipertextbox">
-          <li>1모달안에 들어갈 내용 </li>
-          <li>2</li>
-          <li>3</li>
-          <li>4</li> 
+          <ul className ="swipertextbox">
+
           </ul>
         </div>
     </div>
